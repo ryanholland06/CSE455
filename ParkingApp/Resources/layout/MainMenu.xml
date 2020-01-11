@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+        <ImageView
+            android:src="@mipmap/coyotelogo"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="19.5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41.5dp"
+            android:text="Main Menu"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor ="@android:color/black"
+            android:layout_marginBottom="1.0dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_marginBottom="14.5dp">
+            <!--Parking button-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35.0dp"
+                    android:layout_height="40.0dp"
+                    android:src="@mipmap/parkinglogo"
+                    android:id="@+id/imageView2"
+                    android:layout_marginBottom="10.5dp" />
+                <Button
+                    android:layout_width="274.0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Park car"
+                    android:layout_column="1" />
+            </TableRow>
+            <!--Map button-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35.0dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/map"
+                    android:id="@+id/imageView3" />
+                <Button
+                    android:layout_width="274.0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Map view" />
+            </TableRow>
+            <!--List View button-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35.0dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/list"
+                    android:id="@+id/imageView4" />
+                <Button
+                    android:layout_width="274.0dp"
+                    android:layout_height="wrap_content"
+                    android:text="List View" />
+            </TableRow>
+        </TableLayout>
+        
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

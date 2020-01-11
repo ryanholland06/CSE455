@@ -18,6 +18,8 @@ namespace ParkingApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.MainMenu);
+
 
             // Create your application here
         }
