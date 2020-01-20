@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+        <ImageView
+            android:src="@mipmap/coyotelogo"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="19.5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41.5dp"
+            android:text="Main Menu"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor ="@android:color/black"
+            android:layout_marginBottom="1.0dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_marginBottom="14.5dp">
+            <!--Scan button-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    xmlns="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/textView1" />
+                <Button
+                    android:id="@+id/scanQRButton"
+                    android:layout_width="294.5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Scan QR code"
+                    android:layout_column="1" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

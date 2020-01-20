@@ -47,6 +47,7 @@
                     android:layout_width="274.0dp"
                     android:layout_height="wrap_content"
                     android:text="Park car"
+                    android:id="@+id/ParkCarButton"
                     android:layout_column="1" />
             </TableRow>
             <!--Map button-->
