@@ -18,6 +18,14 @@ namespace ParkingApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.MainMenu);
+            Button parkCarButton = FindViewById<Button>(Resource.Id.ParkCarButton);
+            parkCarButton.Click += (sender, e) =>
+            {
+                var parkCarIntent = new Intent(this, typeof(ParkCar));
+                StartActivity(parkCarIntent);
+            };
+
 
             // Create your application here
         }

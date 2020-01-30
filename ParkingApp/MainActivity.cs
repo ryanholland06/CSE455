@@ -13,7 +13,9 @@ namespace ParkingApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            Xamarin.Forms.Forms.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            ZXing.Net.Mobile.Forms.Android.Platform.Init();
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
             Button signUpButton = FindViewById<Button>(Resource.Id.btn_signUp);
