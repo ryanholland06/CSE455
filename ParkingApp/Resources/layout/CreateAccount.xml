@@ -4,20 +4,23 @@
     android:layout_width="match_parent"  
     android:layout_height="match_parent">  
     <EditText  
+        android:inputType ="textPersonName"
         android:hint="Enter your Name"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:id="@+id/edtName"/>  
     <EditText  
-        android:hint="Enter your Department"  
+        android:hint="Enter your Email" 
+        android:inputType ="textEmailAddress"
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
-        android:id="@+id/edtDepart" />  
-    <EditText  
-        android:hint="Enter your Email"  
+        android:id="@+id/edtEmail"/>
+    <EditText
+        android:inputType="textPassword"
+        android:hint="Enter your Password"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
-        android:id="@+id/edtEmail"/>  
+        android:id="@+id/edtPassword" />  
     <LinearLayout  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  

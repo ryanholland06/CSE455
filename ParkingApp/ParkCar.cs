@@ -41,10 +41,9 @@ namespace ParkingApp
                         string test = result;
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
 
-                    throw;
                 }
             };
 

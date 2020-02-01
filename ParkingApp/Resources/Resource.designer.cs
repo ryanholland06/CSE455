@@ -6024,13 +6024,13 @@ namespace ParkingApp
 			public const int edit_query = 2131230794;
 			
 			// aapt resource value: 0x7F08004B
-			public const int edtDepart = 2131230795;
+			public const int edtEmail = 2131230795;
 			
 			// aapt resource value: 0x7F08004C
-			public const int edtEmail = 2131230796;
+			public const int edtName = 2131230796;
 			
 			// aapt resource value: 0x7F08004D
-			public const int edtName = 2131230797;
+			public const int edtPassword = 2131230797;
 			
 			// aapt resource value: 0x7F08004E
 			public const int end = 2131230798;
@@ -6462,13 +6462,13 @@ namespace ParkingApp
 			public const int transition_transform = 2131230935;
 			
 			// aapt resource value: 0x7F0800D8
-			public const int txtView_Depart = 2131230936;
+			public const int txtView_Email = 2131230936;
 			
 			// aapt resource value: 0x7F0800D9
-			public const int txtView_Email = 2131230937;
+			public const int txtView_Name = 2131230937;
 			
 			// aapt resource value: 0x7F0800DA
-			public const int txtView_Name = 2131230938;
+			public const int txtView_Password = 2131230938;
 			
 			// aapt resource value: 0x7F0800DB
 			public const int uniform = 2131230939;

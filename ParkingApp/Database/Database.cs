@@ -21,7 +21,7 @@ namespace ParkingApp
         {
             try
             {
-                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Persons.db")))
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "SpotLot.db")))
                 {
                     connection.CreateTable<Person>();
                     return true;
@@ -39,7 +39,7 @@ namespace ParkingApp
         {
             try
             {
-                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Persons.db")))
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "SpotLot.db")))
                 {
                     connection.Insert(person);
                     return true;
@@ -55,7 +55,7 @@ namespace ParkingApp
         {
             try
             {
-                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Persons.db")))
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "SpotLot.db")))
                 {
                     return connection.Table<Person>().ToList();
                 }
@@ -72,9 +72,9 @@ namespace ParkingApp
         {
             try
             {
-                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Persons.db")))
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "SpotLot.db")))
                 {
-                    connection.Query<Person>("UPDATE Person set Name=?, Department=?, Email=? Where Id=?", person.Name, person.Department, person.Email, person.Id);
+                    connection.Query<Person>("UPDATE Person set Name=?, Password=?, Email=? Where Id=?", person.Name, person.Password , person.Email, person.Id);
                     return true;
                 }
             }
@@ -90,7 +90,7 @@ namespace ParkingApp
         {
             try
             {
-                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Persons.db")))
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "SpotLot.db")))
                 {
                     connection.Delete(person);
                     return true;
@@ -108,7 +108,7 @@ namespace ParkingApp
         {
             try
             {
-                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Persons.db")))
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "SpotLot.db")))
                 {
                     connection.Query<Person>("SELECT * FROM Person Where Id=?", Id);
                     return true;

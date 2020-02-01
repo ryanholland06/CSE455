@@ -10,11 +10,11 @@
         android:layout_height="wrap_content"  
         android:id="@+id/txtView_Name" />  
     <TextView  
-        android:text="Department"  
+        android:text="Password"  
         android:textAppearance="?android:attr/textAppearanceMedium"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
-        android:id="@+id/txtView_Depart" />  
+        android:id="@+id/txtView_Password" />  
     <TextView  
         android:text="Email"  
         android:textAppearance="?android:attr/textAppearanceMedium"  

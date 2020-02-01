@@ -18,7 +18,7 @@ namespace ParkingApp
 
         ListView lstViewData;
         List<Person> listSource = new List<Person>();
-        Database db;
+        Database db ;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -29,7 +29,7 @@ namespace ParkingApp
             db.createDatabase();
             lstViewData = FindViewById<ListView>(Resource.Id.listView);
             var edtName = FindViewById<EditText>(Resource.Id.edtName);
-            var edtDepart = FindViewById<EditText>(Resource.Id.edtDepart);
+            var passwordInput = FindViewById<EditText>(Resource.Id.edtPassword);
             var edtEmail = FindViewById<EditText>(Resource.Id.edtEmail);
             var btnAdd = FindViewById<Button>(Resource.Id.btnAdd);
             var btnEdit = FindViewById<Button>(Resource.Id.btnEdit);
@@ -42,7 +42,7 @@ namespace ParkingApp
                 Person person = new Person()
                 {
                     Name = edtName.Text,
-                    Department = edtDepart.Text,
+                    Password = passwordInput.Text,
                     Email = edtEmail.Text
                 };
                 db.insertIntoTable(person);
@@ -54,7 +54,7 @@ namespace ParkingApp
                 {
                     Id = int.Parse(edtName.Tag.ToString()),
                     Name = edtName.Text,
-                    Department = edtDepart.Text,
+                    Password = passwordInput.Text,
                     Email = edtEmail.Text
                 };
                 db.updateTable(person);
@@ -62,15 +62,22 @@ namespace ParkingApp
             };
             btnRemove.Click += delegate
             {
-                Person person = new Person()
+                try
                 {
-                    Id = int.Parse(edtName.Tag.ToString()),
-                    Name = edtName.Text,
-                    Department = edtDepart.Text,
-                    Email = edtEmail.Text
-                };
-                db.removeTable(person);
-                LoadData();
+                    Person person = new Person()
+                    {
+                        Id = int.Parse(edtName.Tag.ToString()),
+                        Name = edtName.Text,
+                        Password = passwordInput.Text,
+                        Email = edtEmail.Text
+                    };
+                    db.removeTable(person);
+                    LoadData();
+                }
+                catch
+                {
+
+                }
             };
             lstViewData.ItemClick += (s, e) =>
             {
@@ -84,11 +91,11 @@ namespace ParkingApp
                     }
                 //Binding Data
                 var txtName = e.View.FindViewById<TextView>(Resource.Id.txtView_Name);
-                var txtDepart = e.View.FindViewById<TextView>(Resource.Id.txtView_Depart);
+                var txtPassword = e.View.FindViewById<TextView>(Resource.Id.txtView_Password);
                 var txtEmail = e.View.FindViewById<TextView>(Resource.Id.txtView_Email);
                 edtEmail.Text = txtName.Text;
                 edtName.Tag = e.Id;
-                edtDepart.Text = txtDepart.Text;
+                passwordInput.Text = txtPassword.Text;
                 edtEmail.Text = txtEmail.Text;
             };
         }

@@ -36,10 +36,10 @@ namespace SQLiteDB.Resources.Model
         {
             var view = convertView ?? activity.LayoutInflater.Inflate(Resource.Layout.listView, parent, false);
             var txtName = view.FindViewById<TextView>(Resource.Id.txtView_Name);
-            var txtDepart = view.FindViewById<TextView>(Resource.Id.txtView_Depart);
+            var txtDepart = view.FindViewById<TextView>(Resource.Id.txtView_Password);
             var txtEmail = view.FindViewById<TextView>(Resource.Id.txtView_Email);
             txtName.Text = listPerson[position].Name;
-            txtDepart.Text = listPerson[position].Department;
+            txtDepart.Text = listPerson[position].Password;
             txtEmail.Text = listPerson[position].Email;
             return view;
         }
