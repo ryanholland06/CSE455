@@ -24,7 +24,7 @@ namespace ParkingApp
 
             signUpButton.Click += (sender, e) =>
             {
-                var signUpIntent = new Intent(this, typeof(Sig));
+                var signUpIntent = new Intent(this, typeof(CreateAccount));
                 StartActivity(signUpIntent);
             };
             forgotPasswordButton.Click += (sender, e) =>
