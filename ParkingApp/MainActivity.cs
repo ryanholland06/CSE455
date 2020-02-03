@@ -52,13 +52,16 @@ namespace ParkingApp
                 LoadData();
                 var signUpIntent = new Intent(this, typeof(MainMenu));
                 bool isValidUser = false;
-                foreach(var user in listSource)
+                if(passwordInput.Text !="" && emailInput.Text != "")
                 {
-                    if (user.Password == passwordInput.Text && user.Email == emailInput.Text)
-                        isValidUser = true;
+                    foreach(var user in listSource)
+                    {
+                        if (user.Password == passwordInput.Text && user.Email == emailInput.Text)
+                            isValidUser = true;
+                    }
+                    if(isValidUser)
+                        StartActivity(signUpIntent);
                 }
-                if(isValidUser)
-                    StartActivity(signUpIntent);
             };
 
         }

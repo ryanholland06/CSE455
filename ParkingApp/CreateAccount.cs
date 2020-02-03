@@ -16,7 +16,7 @@ namespace ParkingApp
     class CreateAccount : Activity
     {
 
-        ListView lstViewData;
+        //ListView lstViewData;
         List<Person> listSource = new List<Person>();
         Database db ;
         protected override void OnCreate(Bundle savedInstanceState)
