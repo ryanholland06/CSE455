@@ -28,6 +28,14 @@ namespace ParkingApp
 
 
             // Create your application here
+
+            Button settings = FindViewById<Button>(Resource.Id.Settings);
+
+            settings.Click += (sender, e) =>
+            {
+                var paymentIntent = new Intent(this, typeof(UserSettings));
+                StartActivity(paymentIntent);
+            };
         }
     }
 }
