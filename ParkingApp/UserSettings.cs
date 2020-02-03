@@ -12,7 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Com.Karumi.Dexter;
 using ParkingApp.Services;
-using Xamarin.Forms;
+//using Xamarin.Forms;  // Button doesnt work when this is on.
 using ZXing.Mobile;
 
 namespace ParkingApp
@@ -24,6 +24,13 @@ namespace ParkingApp
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.UserSettings);
+
+            Button payment = FindViewById<Button>(Resource.Id.payment_info);
+            payment.Click += (sender, e) =>
+            {
+                var payTime = new Intent(this, typeof(Payment));
+                StartActivity(payTime);
+            };
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)

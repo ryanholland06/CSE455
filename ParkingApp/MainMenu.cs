@@ -19,6 +19,7 @@ namespace ParkingApp
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MainMenu);
+
             Button parkCarButton = FindViewById<Button>(Resource.Id.ParkCarButton);
             parkCarButton.Click += (sender, e) =>
             {
@@ -30,7 +31,6 @@ namespace ParkingApp
             // Create your application here
 
             Button settings = FindViewById<Button>(Resource.Id.Settings);
-
             settings.Click += (sender, e) =>
             {
                 var paymentIntent = new Intent(this, typeof(UserSettings));
