@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SpotLotSecurityGuard.Towing">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Label Text="TOWING"
+               FontSize="Large"/>
+            <Label Text="Security Guard will be able to fill out a form that will send a request to the towing company contracted and an alert to the user." />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

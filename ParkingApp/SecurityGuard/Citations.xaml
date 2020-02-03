@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SpotLotSecurityGuard.Citations">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20"
+                     HorizontalOptions="Center">
+            <Label Text="CITATIONS"
+               FontSize="Large"/>
+            <Label Text="Security Guard will be able to fill out a form that will ask
+                   for user information to assign citations baed on policy." />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
