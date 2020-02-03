@@ -78,6 +78,21 @@
                     android:layout_height="wrap_content"
                     android:text="List View" />
             </TableRow>
+                        <!--User Settings button-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35.0dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/list"
+                    android:id="@+id/imageView4" />
+                <Button
+                    android:layout_width="274.0dp"
+                    android:layout_height="wrap_content"
+                    android:text="User Settings"
+                    android:id = "@+id/Settings"/>
+            </TableRow>
         </TableLayout>
         
             android:layout_height="wrap_content"/>
