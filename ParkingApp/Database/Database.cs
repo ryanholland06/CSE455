@@ -74,7 +74,7 @@ namespace ParkingApp
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "SpotLot.db")))
                 {
-                    connection.Query<Person>("UPDATE Person set Name=?, Password=?, Email=? Where Id=?", person.Name, person.Password , person.Email, person.Id);
+                    connection.Query<Person>("UPDATE Person set Name=?, Password=?, Email=?, StudentID=? Where Id=?", person.Name, person.Password , person.Email, person.Id);
                     return true;
                 }
             }

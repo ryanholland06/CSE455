@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿ 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
     android:orientation="vertical"  
     android:layout_width="match_parent"  
@@ -9,6 +9,12 @@
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:id="@+id/edtName"/>  
+    <EditText
+        android:inputType="text"
+        android:hint="Student ID"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/edtStudentID" /> 
     <EditText  
         android:hint="Enter your Email" 
         android:inputType ="textEmailAddress"
@@ -21,6 +27,7 @@
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:id="@+id/edtPassword" />  
+    
     <LinearLayout  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
@@ -29,25 +36,8 @@
             android:id="@+id/btnAdd"  
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
-            android:text="Add"  
+            android:text="Create Account"  
             android:layout_weight="1"/>  
-        <Button  
-            android:id="@+id/btnEdit"  
-            android:layout_width="wrap_content"  
-            android:layout_height="wrap_content"  
-            android:text="Update"  
-            android:layout_weight="1"/>  
-        <Button  
-            android:id="@+id/btnRemove"  
-            android:layout_width="wrap_content"  
-            android:layout_height="wrap_content"  
-            android:text="Remove"  
-            android:layout_weight="1"/>  
+     
     </LinearLayout>  
-    <ListView  
-        android:minWidth="25px"  
-        android:minHeight="25px"  
-        android:layout_width="match_parent"  
-        android:layout_height="match_parent"  
-        android:id="@+id/listView"/>  
-</LinearLayout>  
+</LinearLayout>
