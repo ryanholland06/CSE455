@@ -13,26 +13,21 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
         
+        <TextView android:id="@+id/this_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="No Payment Method Exist" />
         <Button
-            android:id="@+id/login_info"
+            android:id="@+id/add_or_change"
+            android:onClick= "WasClicked"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Login Information"/>
+            android:text="Add/Change Payment info"/>
         <Button
-            android:id="@+id/payment_info"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Payment Information"/>
-        <Button
-        android:id="@+id/vehicle_info"
+        android:id="@+id/delete_pay_info"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Vehicle Information"/>
-        <Button
-        android:id="@+id/profile_pic"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Profile Picture"/>
+        android:text="Delete Payment Info"/>
 
 
     </LinearLayout>
